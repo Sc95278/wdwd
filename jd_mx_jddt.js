@@ -23,7 +23,7 @@ if ($.isNode()) {
     $.getdata("CookieJD2"),
     ...$.toObj($.getdata("CookiesJD") || "[]").map((item) => item.cookie)].filter((item) => !!item);
 }
-const JD_API_HOST = '';
+const JD_API_HOST = 'https://hserver.moxigame.cn';
 
 !(async () => {
   if (!cookiesArr[0]) {
